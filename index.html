@@ -1,78 +1,129 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>ceci n'est pas ma première page web</title>
-        <link rel="ico" href="/home/benji/code/arch.png" type="image/x-icon">
-        <style>
-            body {
-                background-color: #B2BEB5;
-                
-            }
-            .table {
-                border-width: 2px;
-            }
-            .center {
-                align-items: center;
-                border-radius: 10px;
-                size: 90%;
-                padding-left: 10%;
-                padding-right: 10%;
-                padding-top: 5%;
-                padding-bottom: 5%;
-                background-color: #A9A9A9;
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio GitHub - Benji77430</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #2c2c54, #40407a);
+        color: #f5f6fa;
+      }
+      header {
+        background: linear-gradient(135deg, #4c63d9, #6a82fb);
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      main {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: #2f3640;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+        color: #00a8ff;
+        margin-bottom: 1rem;
+        border-left: 4px solid #00a8ff;
+        padding-left: 0.5rem;
+      }
+      .project {
+        background: #353b48;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      .project a {
+        color: #a198cf;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .project a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #dcdde1;
+        padding: 1rem;
+        background: #2f3640;
+        border-top: 2px solid #718093;
+      }
+      .button {
+        display: inline-block;
+        padding-left: 0.5rem;
+        padding: 0.8rem 0.5rem;
+        background: #4c63d9;
+        color: #fff;
+        text-decoration: none;
+        border-spacing: 0.1rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background 0.3s;
+      }
+      .button:hover {
+        background: #7d8feb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio  - Benji77430</h1>
+    </header>
+    <main>
+      <section>
+        <h2>À propos</h2>
+        <p>
+          Bienvenue sur mon portfolio ! Retrouvez ici les informations et
+          projets disponibles sur ma page GitHub.
+        </p>
+      </section>
 
-            }
-            .border {
-                border-radius: 5px;
-                border-width: 3px;
-                border-color: black;
-            }
-
-            img {
-                max-width: 20%;
-                max-height: 20%;
-                padding-left: 37%;
-                padding-right: 30%;
-            }
-            .left {
-                padding-right: 60%;
-                padding-top: 30%;
-
-            }
-            a {
-                font-style: normal;
-                padding-left: 90%;
-            }
-        </style>
-
-
-    </head>
-    <body>
-        <div class="center">
-            <img class="image" src="/home/benji/code/arch.png">
-            <h1 >ceci n'est pas ma première page web</h1>
-            <br><br><br><br><br>
-            <table>
-                <tr>
-                    <td class="border">température :</td>
-                    <td class="border">20,6</td>
-                    <td class="border">°C</td>
-                </tr>
-                <tr>
-
-                    <td class="border">humidité</td>
-                    <td class="border">60</td>
-                    <td class="border">%</td>
-                </tr>
-                
-
-
-            </table>              
-            <h3 class="left">VINCENT-GASQUEZ | benjamin | 12D2 LYC La Fayette</h3>
-            
-            <h3 class="github right"><a target="_blank" href="https://github.com/benji77430">mon github</a></h3>
+      <section>
+        <h2>Projets récents</h2>
+        <div class="project">
+          <h3>Projet 1 - SpotAFan</h3>
+          <p>
+            Ce projet est une application qui propose l'installation de music et la possibilité d'écouter sans pub et connection
+          </p>
+          <a target="_blank" href="https://github.com/benji77430/SpotAFan">Voir les détails</a>
         </div>
-    </body>    
-    
-
+        <div class="project">
+          <h3>Projet 2 - SIN projet</h3>
+          <p>
+            SIN project est un outil de calcul pour les cours de SIN par exemple pour l'hexadecimal vers du binaire, ascii, décimal ou dans les autres sens
+          </p>
+          <a target="_blank" href="https://github.com/benji77430/SIN">Voir les détails</a>
+        </div>
+        
+        </div>
+      </section>
+    </main>
+    <footer>
+      
+      <p>
+        mon profil GitHub :
+        <a class="button" href="https://github.com/benji77430" target="_blank">github</a>
+        <p>&copy; 2025 Benji77430. Tous droits réservés.</p>
+      </p>
+    </footer>
+  </body>
 </html>
